@@ -1,14 +1,11 @@
-// SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.13;
+// test/Counter.t.sol
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
-contract Counter {
-    uint256 public number;
+import "forge-std/Test.sol";
 
-    function setNumber(uint256 newNumber) public {
-        number = newNumber;
-    }
-
-    function increment() public {
-        number++;
+contract CounterTest is Test {
+    function testExample() public {
+        assertTrue(true);
     }
 }
